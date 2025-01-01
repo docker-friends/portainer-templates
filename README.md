@@ -29,7 +29,7 @@ This repository is community-maintained, meaning anyone can contribute by adding
 
 ![portainer settings](https://raw.githubusercontent.com/docker-friends/portainer-templates/refs/heads/main/img/portainer-templates-settings.png)
 
-2. Add the URL of the `templates.json` file from this repository:
+2. Add the URL of the `app-templates.json` file from this repository in the App Template `URL` field:
 
 	`https://raw.githubusercontent.com/docker-friends/portainer-templates/refs/heads/main/app-templates.json`
 
