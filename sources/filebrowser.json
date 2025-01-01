@@ -1,0 +1,26 @@
+{
+  "type": 1,
+  "title": "File browser",
+  "description": "A web file manager",
+  "note": "Default credentials: admin/admin",
+  "categories": [
+    "Filesystem",
+    "Storage"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/filebrowser.png",
+  "image": "filebrowser/filebrowser:latest",
+  "ports": [
+    "80/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/data"
+    },
+    {
+      "container": "/srv"
+    }
+  ],
+  "command": "--port 80 --database /data/database.db --root /srv",
+  "maintainer": "https://github.com/filebrowser/filebrowser"
+}

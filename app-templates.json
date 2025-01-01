@@ -50,6 +50,63 @@
         },
         {
             "categories": [
+                "Filesystem",
+                "Storage"
+            ],
+            "command": "--port 80 --database /data/database.db --root /srv",
+            "description": "A web file manager",
+            "image": "filebrowser/filebrowser:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/filebrowser.png",
+            "maintainer": "https://github.com/filebrowser/filebrowser",
+            "note": "Default credentials: admin/admin",
+            "platform": "linux",
+            "ports": [
+                "80/tcp"
+            ],
+            "title": "File browser",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/data"
+                },
+                {
+                    "container": "/srv"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Marketing"
+            ],
+            "description": "Open-source marketing automation platform",
+            "env": [
+                {
+                    "label": "MySQL database host",
+                    "name": "MAUTIC_DB_HOST",
+                    "type": "container"
+                },
+                {
+                    "label": "Database password",
+                    "name": "MAUTIC_DB_PASSWORD"
+                }
+            ],
+            "image": "mautic/mautic:latest",
+            "logo": "https://www.gravatar.com/avatar/a946d764bc1e4a7a39664099febfc9b2",
+            "maintainer": "https://github.com/mautic/docker-mautic",
+            "platform": "linux",
+            "ports": [
+                "80/tcp"
+            ],
+            "title": "Mautic",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/www/html"
+                }
+            ]
+        },
+        {
+            "categories": [
                 "Database"
             ],
             "description": "An open-source distributed SQL database",
@@ -82,6 +139,27 @@
                 "80/tcp"
             ],
             "title": "Caddy",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/data"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Cms"
+            ],
+            "description": "A free and open-source CMS built on top of Zope",
+            "image": "plone:latest",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/plone/live/logo-1720462256223.png",
+            "maintainer": "https://github.com/plone/plone.docker",
+            "note": "Default user and password are admin/admin",
+            "platform": "linux",
+            "ports": [
+                "8080/tcp"
+            ],
+            "title": "Plone",
             "type": 1,
             "volumes": [
                 {
@@ -170,6 +248,27 @@
                 },
                 {
                     "container": "/usr/src/app/localMetadata"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Projectmanagement"
+            ],
+            "description": "Open-source project management tool",
+            "image": "redmine:latest",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/redmine/live/logo-1720462263977.png",
+            "maintainer": "https://github.com/docker-library/redmine",
+            "note": "Default user and password are admin/admin",
+            "platform": "linux",
+            "ports": [
+                "3000/tcp"
+            ],
+            "title": "Redmine",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/usr/src/redmine/files"
                 }
             ]
         },
@@ -278,6 +377,78 @@
             "volumes": [
                 {
                     "container": "/var/lib/registry"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Logmanagement",
+                "Monitoring"
+            ],
+            "description": "Collect logs, metrics and docker events",
+            "env": [
+                {
+                    "label": "Logs token",
+                    "name": "LOGSENE_TOKEN"
+                },
+                {
+                    "label": "SPM monitoring token",
+                    "name": "SPM_TOKEN"
+                }
+            ],
+            "image": "sematext/sematext-agent-docker:latest",
+            "logo": "https://www.gravatar.com/avatar/4cd0590f72e395d94555d1b3d7dcfada",
+            "maintainer": "http://sematext.com/docker",
+            "name": "sematext-agent",
+            "platform": "linux",
+            "privileged": true,
+            "title": "Sematext Docker Agent",
+            "type": 1,
+            "volumes": [
+                {
+                    "bind": "/var/run/docker.sock",
+                    "container": "/var/run/docker.sock"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Cms"
+            ],
+            "description": "Open-source modular CMS",
+            "env": [
+                {
+                    "default": "true",
+                    "name": "express",
+                    "preset": true
+                },
+                {
+                    "default": "true",
+                    "name": "install",
+                    "preset": true
+                },
+                {
+                    "default": "lucee@4.5",
+                    "name": "CFENGINE",
+                    "preset": true
+                }
+            ],
+            "image": "ortussolutions/contentbox:latest",
+            "logo": "https://www.gravatar.com/avatar/61532a7f32112e9fe23da5a1b5a9ef6a",
+            "maintainer": "https://github.com/Ortus-Solutions/ContentBox",
+            "platform": "linux",
+            "ports": [
+                "8080/tcp",
+                "8443/tcp"
+            ],
+            "title": "ContentBox",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/data/contentbox/db"
+                },
+                {
+                    "container": "/app/includes/shared/media"
                 }
             ]
         },
@@ -444,6 +615,29 @@
         },
         {
             "categories": [
+                "Development"
+            ],
+            "description": "ColdFusion (CFML) CLI",
+            "env": [
+                {
+                    "default": "lucee@4.5",
+                    "name": "CFENGINE",
+                    "preset": true
+                }
+            ],
+            "image": "ortussolutions/commandbox:latest",
+            "logo": "https://www.gravatar.com/avatar/61532a7f32112e9fe23da5a1b5a9ef6a",
+            "maintainer": "https://github.com/Ortus-Solutions/docker-commandbox",
+            "platform": "linux",
+            "ports": [
+                "8080/tcp",
+                "8443/tcp"
+            ],
+            "title": "CommandBox",
+            "type": 1
+        },
+        {
+            "categories": [
                 "development"
             ],
             "command": "/bin/bash",
@@ -455,6 +649,62 @@
             "platform": "linux",
             "title": "NodeJS",
             "type": 1
+        },
+        {
+            "categories": [
+                "Continuousintegration"
+            ],
+            "description": "Open-source continuous integration tool",
+            "image": "jenkins/jenkins:latest",
+            "logo": "https://www.gravatar.com/avatar/c61b120bdaedf42832ad4c9e391b3929",
+            "maintainer": "https://github.com/jenkinsci/docker",
+            "platform": "linux",
+            "ports": [
+                "8080/tcp",
+                "50000/tcp"
+            ],
+            "title": "Jenkins",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/jenkins_home"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Monitoring"
+            ],
+            "description": "Collect events and metrics",
+            "env": [
+                {
+                    "label": "Datadog API key",
+                    "name": "DD_API_KEY"
+                }
+            ],
+            "image": "datadog/agent:latest",
+            "logo": "https://www.gravatar.com/avatar/812de840123feefac39f85428fd7744a",
+            "maintainer": "https://github.com/DataDog/datadog-agent",
+            "platform": "linux",
+            "title": "Datadog agent",
+            "type": 1,
+            "volumes": [
+                {
+                    "bind": "/var/run/docker.sock",
+                    "container": "/var/run/docker.sock",
+                    "readonly": true
+                },
+                {
+                    "bind": "/sys/fs/cgroup",
+                    "container": "/host/sys/fs/cgroup",
+                    "readonly": true
+                },
+                {
+                    "bind": "/proc",
+                    "container": "/host/proc",
+                    "readonly": true
+                }
+            ]
         },
         {
             "categories": [

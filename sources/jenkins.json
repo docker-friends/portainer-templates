@@ -1,0 +1,21 @@
+{
+  "type": 1,
+  "title": "Jenkins",
+  "description": "Open-source continuous integration tool",
+  "categories": [
+    "Continuousintegration"
+  ],
+  "platform": "linux",
+  "logo": "https://www.gravatar.com/avatar/c61b120bdaedf42832ad4c9e391b3929",
+  "image": "jenkins/jenkins:latest",
+  "ports": [
+    "8080/tcp",
+    "50000/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/var/jenkins_home"
+    }
+  ],
+  "maintainer": "https://github.com/jenkinsci/docker"
+}

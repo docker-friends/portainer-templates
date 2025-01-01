@@ -1,0 +1,31 @@
+{
+  "type": 1,
+  "title": "Mautic",
+  "description": "Open-source marketing automation platform",
+  "categories": [
+    "Marketing"
+  ],
+  "platform": "linux",
+  "logo": "https://www.gravatar.com/avatar/a946d764bc1e4a7a39664099febfc9b2",
+  "image": "mautic/mautic:latest",
+  "env": [
+    {
+      "name": "MAUTIC_DB_HOST",
+      "label": "MySQL database host",
+      "type": "container"
+    },
+    {
+      "name": "MAUTIC_DB_PASSWORD",
+      "label": "Database password"
+    }
+  ],
+  "ports": [
+    "80/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/var/www/html"
+    }
+  ],
+  "maintainer": "https://github.com/mautic/docker-mautic"
+}

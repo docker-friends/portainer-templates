@@ -1,0 +1,21 @@
+{
+  "type": 1,
+  "title": "Plone",
+  "description": "A free and open-source CMS built on top of Zope",
+  "note": "Default user and password are admin/admin",
+  "categories": [
+    "Cms"
+  ],
+  "platform": "linux",
+  "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/plone/live/logo-1720462256223.png",
+  "image": "plone:latest",
+  "ports": [
+    "8080/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/data"
+    }
+  ],
+  "maintainer": "https://github.com/plone/plone.docker"
+}

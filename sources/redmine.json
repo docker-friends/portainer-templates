@@ -1,0 +1,21 @@
+{
+  "type": 1,
+  "title": "Redmine",
+  "description": "Open-source project management tool",
+  "note": "Default user and password are admin/admin",
+  "categories": [
+    "Projectmanagement"
+  ],
+  "platform": "linux",
+  "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/redmine/live/logo-1720462263977.png",
+  "image": "redmine:latest",
+  "ports": [
+    "3000/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/usr/src/redmine/files"
+    }
+  ],
+  "maintainer": "https://github.com/docker-library/redmine"
+}
