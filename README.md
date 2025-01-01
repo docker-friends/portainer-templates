@@ -76,6 +76,13 @@ If you encounter any issues or have suggestions for new templates, feel free to 
 
 This repository is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License. Feel free to use, modify, and distribute these templates as needed.
 
+## 🙏 Acknowledgements
+
+Inspired by and partial code reused from:
+
+ - [@lissy93](https://github.com/Lissy93/portainer-templates)
+ - [@shmolf](https://github.com/shmolf/portainer-templates)
+
 ## 🤝 Contributors
 
 Thanks to all the amazing contributors who have made this project possible! 🙌
