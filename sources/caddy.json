@@ -1,0 +1,20 @@
+{
+  "type": 1,
+  "title": "Caddy",
+  "description": "Open-source web server with automatic HTTPS written in Go",
+  "categories": [
+    "Webserver"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/caddy.png",
+  "image": "caddy:latest",
+  "ports": [
+    "80/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/data"
+    }
+  ],
+  "maintainer": "https://github.com/caddyserver/caddy-docker"
+}

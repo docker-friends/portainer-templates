@@ -1,0 +1,20 @@
+{
+  "type": 1,
+  "title": "Solr",
+  "description": "Open-source enterprise search platform",
+  "categories": [
+    "Searchengine"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/07a06d893e901fda965ba10f39d7aa7a3a18ea0d/svg/apache-solr.svg",
+  "image": "solr:latest",
+  "ports": [
+    "8983/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/opt/solr/mydata"
+    }
+  ],
+  "maintainer": "https://github.com/apache/solr"
+}

@@ -1,0 +1,30 @@
+{
+  "type": 1,
+  "title": "PostgreSQL",
+  "description": "The most advanced open-source database",
+  "categories": [
+    "Database"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/postgres.png",
+  "image": "postgres:latest",
+  "env": [
+    {
+      "name": "POSTGRES_USER",
+      "label": "Superuser"
+    },
+    {
+      "name": "POSTGRES_PASSWORD",
+      "label": "Superuser password"
+    }
+  ],
+  "ports": [
+    "5432/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/var/lib/postgresql/data"
+    }
+  ],
+  "maintainer": "https://github.com/docker-library/postgres"
+}

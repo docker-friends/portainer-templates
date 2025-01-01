@@ -1,0 +1,30 @@
+{
+  "type": 1,
+  "title": "GitLab CE",
+  "description": "Open-source end-to-end software development platform",
+  "note": "Default username is <b>root</b>. Check the <a href=\"https://docs.gitlab.com/ee/install/docker.html\" target=\"_blank\">GitLab documentation</a> to get started.",
+  "categories": [
+    "Development",
+    "Projectmanagement"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/gitlab.png",
+  "image": "gitlab/gitlab-ce:latest",
+  "ports": [
+    "80/tcp",
+    "443/tcp",
+    "22/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/etc/gitlab"
+    },
+    {
+      "container": "/var/log/gitlab"
+    },
+    {
+      "container": "/var/opt/gitlab"
+    }
+  ],
+  "maintainer": "https://gitlab.com/gitlab-org/omnibus-gitlab/tree/master/docker"
+}

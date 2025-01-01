@@ -1,0 +1,14 @@
+{
+    "type": 1,
+    "title": "NodeJS",
+    "description": "JavaScript-based platform for server-side and networking applications",
+    "categories": [
+        "development"
+    ],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/nodejs.png",
+    "image": "node:latest",
+    "interactive": true,
+    "command": "/bin/bash",
+    "maintainer": "https://github.com/nodejs/docker-node"
+}

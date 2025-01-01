@@ -1,0 +1,20 @@
+{
+  "type": 1,
+  "title": "Drupal",
+  "description": "Open-source content management framework",
+  "categories": [
+    "Cms"
+  ],
+  "platform": "linux",
+  "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/drupal/live/logo-1720462182785.png",
+  "image": "drupal:latest",
+  "ports": [
+    "80/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/var/www/html"
+    }
+  ],
+  "maintainer": "https://github.com/docker-library/drupal"
+}

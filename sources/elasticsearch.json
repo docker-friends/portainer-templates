@@ -1,0 +1,21 @@
+{
+  "type": 1,
+  "title": "Elasticsearch",
+  "description": "Open-source search and analytics engine",
+  "categories": [
+    "Database"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/elasticsearch.png",
+  "image": "docker.elastic.co/elasticsearch/elasticsearch-wolfi:8.17.0",
+  "ports": [
+    "9200/tcp",
+    "9300/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/usr/share/elasticsearch/data"
+    }
+  ],
+  "maintainer": "https://github.com/elastic/elasticsearch"
+}

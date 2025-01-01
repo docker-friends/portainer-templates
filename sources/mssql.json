@@ -1,0 +1,27 @@
+{
+  "type": 1,
+  "title": "SQL Server",
+  "description": "Microsoft SQL Server on Linux",
+  "categories": [
+    "Database"
+  ],
+  "platform": "linux",
+  "note": "Password needs to include at least 8 characters including uppercase, lowercase letters, base-10 digits and/or non-alphanumeric symbols.",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/microsoft-sql-server.png",
+  "image": "mcr.microsoft.com/mssql/server:latest",
+  "ports": [
+    "1433/tcp"
+  ],
+  "env": [
+    {
+      "name": "ACCEPT_EULA",
+      "default": "Y",
+      "preset": true
+    },
+    {
+      "name": "SA_PASSWORD",
+      "label": "SA password"
+    }
+  ],
+  "maintainer": "https://mcr.microsoft.com/en-us/artifact/mar/mssql/server/about"
+}

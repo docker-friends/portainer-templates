@@ -1,0 +1,35 @@
+{
+  "type": 1,
+  "title": "Minio",
+  "description": "A distributed object storage server built for cloud applications and devops",
+  "categories": [
+    "Storage"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/minio.png",
+  "image": "quay.io/minio/minio:latest",
+  "ports": [
+    "9000/tcp",
+    "9001/tcp"
+  ],
+  "env": [
+    {
+      "name": "MINIO_ROOT_USER",
+      "label": "Root user"
+    },
+    {
+      "name": "MINIO_ROOT_PASSWORD",
+      "label": "Root password"
+    }
+  ],
+  "volumes": [
+    {
+      "container": "/data"
+    },
+    {
+      "container": "/root/.minio"
+    }
+  ],
+  "command": "server /data --console-address ':9001'",
+  "maintainer": "https://quay.io/repository/minio/minio"
+}

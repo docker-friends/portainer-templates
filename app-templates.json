@@ -1,0 +1,381 @@
+{
+    "templates": [
+        {
+            "categories": [
+                "Database"
+            ],
+            "description": "Open-source search and analytics engine",
+            "image": "docker.elastic.co/elasticsearch/elasticsearch-wolfi:8.17.0",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/elasticsearch.png",
+            "maintainer": "https://github.com/elastic/elasticsearch",
+            "platform": "linux",
+            "ports": [
+                "9200/tcp",
+                "9300/tcp"
+            ],
+            "title": "Elasticsearch",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/usr/share/elasticsearch/data"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Database"
+            ],
+            "description": "An open-source distributed SQL database",
+            "image": "crate:latest",
+            "logo": "https://cratedb.com/hubfs/CrateDB-logo-blue-white.svg",
+            "maintainer": "https://github.com/crate/docker-crate",
+            "platform": "linux",
+            "ports": [
+                "4200/tcp",
+                "4300/tcp"
+            ],
+            "title": "CrateDB",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/data"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Webserver"
+            ],
+            "description": "Open-source web server with automatic HTTPS written in Go",
+            "image": "caddy:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/caddy.png",
+            "maintainer": "https://github.com/caddyserver/caddy-docker",
+            "platform": "linux",
+            "ports": [
+                "80/tcp"
+            ],
+            "title": "Caddy",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/data"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Database"
+            ],
+            "description": "Open-source document-oriented database",
+            "image": "mongo:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/mongodb.png",
+            "maintainer": "https://github.com/docker-library/mongo",
+            "platform": "linux",
+            "ports": [
+                "27017/tcp"
+            ],
+            "title": "Mongo",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/data/db"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Cms"
+            ],
+            "description": "Another free and open-source CMS",
+            "env": [
+                {
+                    "label": "MySQL database host",
+                    "name": "JOOMLA_DB_HOST",
+                    "type": "container"
+                },
+                {
+                    "label": "Database password",
+                    "name": "JOOMLA_DB_PASSWORD"
+                }
+            ],
+            "image": "joomla:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/joomla.png",
+            "maintainer": "https://github.com/joomla-docker/docker-joomla",
+            "platform": "linux",
+            "ports": [
+                "80/tcp"
+            ],
+            "title": "Joomla",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/www/html"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Database"
+            ],
+            "description": "The most popular open-source database",
+            "env": [
+                {
+                    "label": "Root password",
+                    "name": "MYSQL_ROOT_PASSWORD"
+                },
+                {
+                    "default": "%",
+                    "name": "MYSQL_ROOT_HOST",
+                    "preset": true
+                }
+            ],
+            "image": "mysql/mysql-server:5.7",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/mysql.png",
+            "maintainer": "https://github.com/docker-library/mysql",
+            "platform": "linux",
+            "ports": [
+                "3306/tcp"
+            ],
+            "title": "MySQL",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/lib/mysql"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Webserver"
+            ],
+            "description": "Open-source HTTP server",
+            "image": "httpd:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/lighttpd.png",
+            "maintainer": "https://github.com/docker-library/httpd",
+            "platform": "linux",
+            "ports": [
+                "80/tcp"
+            ],
+            "title": "Httpd",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/usr/local/apache2/htdocs/"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "operating-system"
+            ],
+            "command": "/bin/bash",
+            "description": "Debian-based Linux operating system",
+            "image": "ubuntu:latest",
+            "interactive": true,
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/ubuntu.png",
+            "maintainer": "https://launchpad.net/cloud-images",
+            "note": "Docker Friends Ubuntu Template",
+            "platform": "linux",
+            "title": "Ubuntu",
+            "type": 1
+        },
+        {
+            "categories": [
+                "Messaging"
+            ],
+            "description": "Highly reliable enterprise messaging system",
+            "image": "rabbitmq:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/rabbitmq.png",
+            "maintainer": "https://github.com/docker-library/rabbitmq",
+            "platform": "linux",
+            "ports": [
+                "5671/tcp",
+                "5672/tcp"
+            ],
+            "title": "RabbitMQ",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/lib/rabbitmq"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "docker"
+            ],
+            "description": "Docker image registry",
+            "image": "registry:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/docker.png",
+            "maintainer": "https://github.com/distribution/distribution-library-image",
+            "note": "Docker Friends Ubuntu Template",
+            "platform": "linux",
+            "ports": [
+                "5000/tcp"
+            ],
+            "title": "Registry",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/lib/registry"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Database"
+            ],
+            "description": "The most advanced open-source database",
+            "env": [
+                {
+                    "label": "Superuser",
+                    "name": "POSTGRES_USER"
+                },
+                {
+                    "label": "Superuser password",
+                    "name": "POSTGRES_PASSWORD"
+                }
+            ],
+            "image": "postgres:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/postgres.png",
+            "maintainer": "https://github.com/docker-library/postgres",
+            "platform": "linux",
+            "ports": [
+                "5432/tcp"
+            ],
+            "title": "PostgreSQL",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/lib/postgresql/data"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Cms"
+            ],
+            "description": "Open-source content management framework",
+            "image": "drupal:latest",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/drupal/live/logo-1720462182785.png",
+            "maintainer": "https://github.com/docker-library/drupal",
+            "platform": "linux",
+            "ports": [
+                "80/tcp"
+            ],
+            "title": "Drupal",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/www/html"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Webserver"
+            ],
+            "description": "nginx web server",
+            "image": "nginx:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/nginx.png",
+            "maintainer": "https://github.com/nginxinc/docker-nginx",
+            "platform": "linux",
+            "ports": [
+                "80/tcp",
+                "443/tcp"
+            ],
+            "title": "Nginx",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/etc/nginx"
+                },
+                {
+                    "container": "/usr/share/nginx/html"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Database"
+            ],
+            "description": "Performance beyond MySQL",
+            "env": [
+                {
+                    "label": "Root password",
+                    "name": "MYSQL_ROOT_PASSWORD"
+                }
+            ],
+            "image": "mariadb:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/mariadb.png",
+            "maintainer": "https://github.com/MariaDB/mariadb-docker",
+            "platform": "linux",
+            "ports": [
+                "3306/tcp"
+            ],
+            "title": "MariaDB",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/lib/mysql"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Database"
+            ],
+            "description": "Open-source in-memory data structure store",
+            "image": "redis:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/redis.png",
+            "maintainer": "https://redis.io/",
+            "platform": "linux",
+            "ports": [
+                "6379/tcp"
+            ],
+            "title": "Redis",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/data"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Blog"
+            ],
+            "description": "Free and open-source blogging platform",
+            "image": "ghost:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/ghost.png",
+            "maintainer": "https://github.com/docker-library/ghost",
+            "note": "Access the blog management interface under <code>/ghost/</code>.",
+            "platform": "linux",
+            "ports": [
+                "2368/tcp"
+            ],
+            "title": "Ghost",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/var/lib/ghost/content"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "development"
+            ],
+            "command": "/bin/bash",
+            "description": "JavaScript-based platform for server-side and networking applications",
+            "image": "node:latest",
+            "interactive": true,
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/nodejs.png",
+            "maintainer": "https://github.com/nodejs/docker-node",
+            "platform": "linux",
+            "title": "NodeJS",
+            "type": 1
+        }
+    ],
+    "version": "3"
+}

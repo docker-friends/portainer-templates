@@ -1,0 +1,21 @@
+{
+  "type": 1,
+  "title": "RabbitMQ",
+  "description": "Highly reliable enterprise messaging system",
+  "categories": [
+    "Messaging"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/rabbitmq.png",
+  "image": "rabbitmq:latest",
+  "ports": [
+    "5671/tcp",
+    "5672/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/var/lib/rabbitmq"
+    }
+  ],
+  "maintainer": "https://github.com/docker-library/rabbitmq"
+}

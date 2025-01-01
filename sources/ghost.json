@@ -1,0 +1,21 @@
+{
+  "type": 1,
+  "title": "Ghost",
+  "description": "Free and open-source blogging platform",
+  "categories": [
+    "Blog"
+  ],
+  "note": "Access the blog management interface under <code>/ghost/</code>.",
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/ghost.png",
+  "image": "ghost:latest",
+  "ports": [
+    "2368/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/var/lib/ghost/content"
+    }
+  ],
+  "maintainer": "https://github.com/docker-library/ghost"
+}

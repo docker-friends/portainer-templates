@@ -1,0 +1,21 @@
+{
+  "type": 1,
+  "title": "CrateDB",
+  "description": "An open-source distributed SQL database",
+  "categories": [
+    "Database"
+  ],
+  "platform": "linux",
+  "logo": "https://cratedb.com/hubfs/CrateDB-logo-blue-white.svg",
+  "image": "crate:latest",
+  "ports": [
+    "4200/tcp",
+    "4300/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/data"
+    }
+  ],
+  "maintainer": "https://github.com/crate/docker-crate"
+}

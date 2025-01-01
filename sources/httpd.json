@@ -1,0 +1,20 @@
+{
+  "type": 1,
+  "title": "Httpd",
+  "description": "Open-source HTTP server",
+  "categories": [
+    "Webserver"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/lighttpd.png",
+  "image": "httpd:latest",
+  "ports": [
+    "80/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/usr/local/apache2/htdocs/"
+    }
+  ],
+  "maintainer": "https://github.com/docker-library/httpd"
+}

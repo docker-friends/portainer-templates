@@ -1,0 +1,24 @@
+{
+  "type": 1,
+  "title": "Nginx",
+  "description": "nginx web server",
+  "categories": [
+    "Webserver"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/nginx.png",
+  "image": "nginx:latest",
+  "ports": [
+    "80/tcp",
+    "443/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/etc/nginx"
+    },
+    {
+      "container": "/usr/share/nginx/html"
+    }
+  ],
+  "maintainer": "https://github.com/nginxinc/docker-nginx"
+}

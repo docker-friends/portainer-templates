@@ -1,0 +1,20 @@
+{
+  "type": 1,
+  "title": "Redis",
+  "description": "Open-source in-memory data structure store",
+  "categories": [
+    "Database"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/redis.png",
+  "image": "redis:latest",
+  "ports": [
+    "6379/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/data"
+    }
+  ],
+  "maintainer": "https://redis.io/"
+}

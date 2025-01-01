@@ -1,0 +1,20 @@
+{
+  "type": 1,
+  "title": "Mongo",
+  "description": "Open-source document-oriented database",
+  "categories": [
+    "Database"
+  ],
+  "platform": "linux",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/mongodb.png",
+  "image": "mongo:latest",
+  "ports": [
+    "27017/tcp"
+  ],
+  "volumes": [
+    {
+      "container": "/data/db"
+    }
+  ],
+  "maintainer": "https://github.com/docker-library/mongo"
+}
