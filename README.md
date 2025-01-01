@@ -29,11 +29,13 @@ This repository is community-maintained, meaning anyone can contribute by adding
 
 ![portainer settings](https://raw.githubusercontent.com/docker-friends/portainer-templates/refs/heads/main/img/portainer-templates-settings.png)
 
-2. Add the URL of the `app-templates.json` file from this repository in the App Template `URL` field:
+2. Add the following URL of the `app-templates.json` file from this repository in the App Template `URL` field:
 
-	`https://raw.githubusercontent.com/docker-friends/portainer-templates/refs/heads/main/app-templates.json`
+	```bash
+	https://raw.githubusercontent.com/docker-friends/portainer-templates/refs/heads/main/app-templates.json
+ 	```
 
-3. Save the settings and explore the templates under `Templates > Application` section in Portainer.
+4. Save the settings and explore the templates under `Templates > Application` section in Portainer.
 
 ### Contributing
 
@@ -43,15 +45,18 @@ We welcome contributions! Here's how you can help:
 
 2. Create a branch for your template or improvement:
 
-	`git checkout -b my-new-template`
+	```bash
+	git checkout -b my-new-template
+ 	```
 
-3. Add or modify a template in the `sources` directory.
+4. Add or modify a template in the `sources` directory.
 
-4. Commit your changes and push to your branch:
+5. Commit your changes and push to your branch:
 
-	`git commit -m "Add new template for [application]"`
-
-	`git push origin my-new-template`
+	```bash
+	git commit -m "Add new template for [application]"
+	git push origin my-new-template
+	```
 
 6. Submit a pull request for review.
 
