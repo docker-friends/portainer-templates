@@ -1,0 +1,41 @@
+{
+  "category": [
+    "Downloaders",
+    "Tools"
+  ],
+  "description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.",
+  "env": [
+    {
+      "label": "PUID",
+      "name": "PUID",
+      "set": "1000"
+    },
+    {
+      "label": "PGID",
+      "name": "PGID",
+      "set": "1000"
+    },
+    {
+      "label": "TZ",
+      "name": "TZ",
+      "set": "America/Chicago"
+    }
+  ],
+  "image": "linuxserver/jackett:latest",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/jackett.png",
+  "platform": "linux",
+  "ports": [
+    "9117/tcp"
+  ],
+  "title": "jackett",
+  "type": 1,
+  "volumes": [
+    {
+      "container": "/config"
+    },
+    {
+      "container": "/downloads"
+    }
+  ],
+  "maintainer": "https://github.com/linuxserver/docker-jackett"
+}

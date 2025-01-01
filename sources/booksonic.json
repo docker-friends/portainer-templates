@@ -1,0 +1,53 @@
+{
+  "category": [
+    "Books",
+    "Other"
+  ],
+  "description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone.",
+  "env": [
+    {
+      "label": "PUID",
+      "name": "PUID",
+      "set": "1000"
+    },
+    {
+      "label": "PGID",
+      "name": "PGID",
+      "set": "1000"
+    },
+    {
+      "label": "CONTEXT_PATH",
+      "name": "CONTEXT_PATH",
+      "set": "booksonic"
+    },
+    {
+      "label": "TZ",
+      "name": "TZ",
+      "set": "Etc/UTC"
+    }
+  ],
+  "image": "lscr.io/linuxserver/booksonic-air:latest",
+  "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/booksonic-air.png",
+  "platform": "linux",
+  "ports": [
+    "4040/tcp"
+  ],
+  "title": "Booksonic Air",
+  "type": 1,
+  "volumes": [
+    {
+      "container": "/audiobooks"
+    },
+    {
+      "container": "/podcast"
+    },
+    {
+      "container": "/config"
+    },
+    {
+      "container": "/othermedia"
+    }
+  ],
+  "name": "booksonic-air",
+  "maintainer": "https://github.com/linuxserver/docker-booksonic-air"
+}

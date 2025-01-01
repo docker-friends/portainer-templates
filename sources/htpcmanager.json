@@ -1,0 +1,39 @@
+{
+  "category": [
+    "Video",
+    "Music",
+    "Other"
+  ],
+  "description": "Htpcmanager, a front end for many htpc related applications. Hellowlol version.",
+  "env": [
+    {
+      "label": "PGID",
+      "name": "PGID",
+      "set": "1000"
+    },
+    {
+      "label": "PUID",
+      "name": "PUID",
+      "set": "1000"
+    },
+    {
+      "label": "TZ",
+      "name": "TZ",
+      "set": "America/Chicago"
+    }
+  ],
+  "image": "linuxserver/htpcmanager:latest",
+  "logo": "https://raw.githubusercontent.com/thesugarat/portainer_templates-1/master/Images/htpcmanager-icon.png",
+  "platform": "linux",
+  "ports": [
+    "8085/tcp"
+  ],
+  "title": "htpcmanager",
+  "type": 1,
+  "volumes": [
+    {
+      "container": "/config"
+    }
+  ],
+  "maintainer": "https://github.com/linuxserver/docker-htpcmanager"
+}

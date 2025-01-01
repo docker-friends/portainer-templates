@@ -352,6 +352,47 @@
             ]
         },
         {
+            "category": [
+                "Downloaders",
+                "Tools"
+            ],
+            "description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.",
+            "env": [
+                {
+                    "label": "PUID",
+                    "name": "PUID",
+                    "set": "1000"
+                },
+                {
+                    "label": "PGID",
+                    "name": "PGID",
+                    "set": "1000"
+                },
+                {
+                    "label": "TZ",
+                    "name": "TZ",
+                    "set": "America/Chicago"
+                }
+            ],
+            "image": "linuxserver/jackett:latest",
+            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/jackett.png",
+            "maintainer": "https://github.com/linuxserver/docker-jackett",
+            "platform": "linux",
+            "ports": [
+                "9117/tcp"
+            ],
+            "title": "jackett",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/config"
+                },
+                {
+                    "container": "/downloads"
+                }
+            ]
+        },
+        {
             "categories": [
                 "Tools",
                 "Pdf"
@@ -405,6 +446,45 @@
                 {
                     "bind": "/portainer/Files/AppData/Libraries/StirlingPDF/tessdata",
                     "container": "/usr/share/tesseract-ocr/5/tessdata"
+                }
+            ]
+        },
+        {
+            "category": [
+                "Video",
+                "Music",
+                "Other"
+            ],
+            "description": "Htpcmanager, a front end for many htpc related applications. Hellowlol version.",
+            "env": [
+                {
+                    "label": "PGID",
+                    "name": "PGID",
+                    "set": "1000"
+                },
+                {
+                    "label": "PUID",
+                    "name": "PUID",
+                    "set": "1000"
+                },
+                {
+                    "label": "TZ",
+                    "name": "TZ",
+                    "set": "America/Chicago"
+                }
+            ],
+            "image": "linuxserver/htpcmanager:latest",
+            "logo": "https://raw.githubusercontent.com/thesugarat/portainer_templates-1/master/Images/htpcmanager-icon.png",
+            "maintainer": "https://github.com/linuxserver/docker-htpcmanager",
+            "platform": "linux",
+            "ports": [
+                "8085/tcp"
+            ],
+            "title": "htpcmanager",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/config"
                 }
             ]
         },
@@ -532,6 +612,86 @@
             "volumes": [
                 {
                     "container": "/var/lib/rabbitmq"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Development"
+            ],
+            "description": "Code-server (https://coder.com) is VS Code running on a remote server, accessible through the browser.",
+            "env": [
+                {
+                    "default": "1000",
+                    "description": "for UserID",
+                    "label": "PUID",
+                    "name": "PUID"
+                },
+                {
+                    "default": "1000",
+                    "description": "for GroupID",
+                    "label": "PGID",
+                    "name": "PGID"
+                },
+                {
+                    "default": "Europe/Amsterdam",
+                    "description": "specify a timezone to use",
+                    "label": "TZ",
+                    "name": "TZ"
+                },
+                {
+                    "default": "password",
+                    "description": "Optional web gui password, if `PASSWORD` or `HASHED_PASSWORD` is not provided, there will be no auth.",
+                    "label": "PASSWORD",
+                    "name": "PASSWORD"
+                },
+                {
+                    "default": "",
+                    "description": "Optional web gui password, overrides `PASSWORD`, instructions on how to create it is below.",
+                    "label": "HASHED_PASSWORD",
+                    "name": "HASHED_PASSWORD"
+                },
+                {
+                    "default": "password",
+                    "description": "If this optional variable is set, user will have sudo access in the code-server terminal with the specified password.",
+                    "label": "SUDO_PASSWORD",
+                    "name": "SUDO_PASSWORD"
+                },
+                {
+                    "default": "",
+                    "description": "Optionally set sudo password via hash (takes priority over `SUDO_PASSWORD` var). Format is `$type$salt$hashed`.",
+                    "label": "SUDO_PASSWORD_HASH",
+                    "name": "SUDO_PASSWORD_HASH"
+                },
+                {
+                    "default": "code-server.my.domain",
+                    "description": "If this optional variable is set, this domain will be proxied for subdomain proxying.",
+                    "label": "PROXY_DOMAIN",
+                    "name": "PROXY_DOMAIN"
+                },
+                {
+                    "default": "/config/workspace",
+                    "description": "If this optional variable is set, code-server will open this directory by default",
+                    "label": "DEFAULT_WORKSPACE",
+                    "name": "DEFAULT_WORKSPACE"
+                }
+            ],
+            "image": "linuxserver/code-server:latest",
+            "logo": "https://avatars.githubusercontent.com/u/95932066",
+            "maintainer": "https://github.com/coder/code-server",
+            "name": "code-server",
+            "note": "",
+            "platform": "linux",
+            "ports": [
+                "8443:8443/tcp"
+            ],
+            "restart_policy": "unless-stopped",
+            "title": "Code-server",
+            "type": 1,
+            "volumes": [
+                {
+                    "bind": "/portainer/Files/AppData/Config/code-server",
+                    "container": "/config"
                 }
             ]
         },
@@ -1086,6 +1246,59 @@
                 },
                 {
                     "container": "/root/.minio"
+                }
+            ]
+        },
+        {
+            "category": [
+                "Books",
+                "Other"
+            ],
+            "description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone.",
+            "env": [
+                {
+                    "label": "PUID",
+                    "name": "PUID",
+                    "set": "1000"
+                },
+                {
+                    "label": "PGID",
+                    "name": "PGID",
+                    "set": "1000"
+                },
+                {
+                    "label": "CONTEXT_PATH",
+                    "name": "CONTEXT_PATH",
+                    "set": "booksonic"
+                },
+                {
+                    "label": "TZ",
+                    "name": "TZ",
+                    "set": "Etc/UTC"
+                }
+            ],
+            "image": "lscr.io/linuxserver/booksonic-air:latest",
+            "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/booksonic-air.png",
+            "maintainer": "https://github.com/linuxserver/docker-booksonic-air",
+            "name": "booksonic-air",
+            "platform": "linux",
+            "ports": [
+                "4040/tcp"
+            ],
+            "title": "Booksonic Air",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/audiobooks"
+                },
+                {
+                    "container": "/podcast"
+                },
+                {
+                    "container": "/config"
+                },
+                {
+                    "container": "/othermedia"
                 }
             ]
         },
