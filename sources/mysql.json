@@ -6,7 +6,7 @@
     "Database"
   ],
   "platform": "linux",
-  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/mysql.png",
+  "logo": "https://www.gravatar.com/avatar/fe97afdad1c00cf7a8ffcb97b95b8d59",
   "image": "mysql/mysql-server:5.7",
   "env": [
     {

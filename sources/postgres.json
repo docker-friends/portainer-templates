@@ -6,7 +6,7 @@
     "Database"
   ],
   "platform": "linux",
-  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/postgres.png",
+  "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/postgres/live/logo-1720462257907.png",
   "image": "postgres:latest",
   "env": [
     {

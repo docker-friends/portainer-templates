@@ -6,7 +6,7 @@
     "Storage"
   ],
   "platform": "linux",
-  "logo": "https://www.scality.com/wp-content/uploads/2022/04/scality-logo-horizontal.svg",
+  "logo": "https://www.gravatar.com/avatar/ece068ca0fdd42cf27d00309fe36382d",
   "image": "scality/s3server",
   "ports": [
     "8000/tcp"

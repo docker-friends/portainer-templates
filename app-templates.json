@@ -33,7 +33,7 @@
             ],
             "description": "Open-source search and analytics engine",
             "image": "docker.elastic.co/elasticsearch/elasticsearch-wolfi:8.17.0",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/elasticsearch.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/elasticsearch/live/logo-1720462186184.png",
             "maintainer": "https://github.com/elastic/elasticsearch",
             "platform": "linux",
             "ports": [
@@ -54,7 +54,7 @@
             ],
             "description": "An open-source distributed SQL database",
             "image": "crate:latest",
-            "logo": "https://cratedb.com/hubfs/CrateDB-logo-blue-white.svg",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/crate/live/logo-1720462176413.png",
             "maintainer": "https://github.com/crate/docker-crate",
             "platform": "linux",
             "ports": [
@@ -75,7 +75,7 @@
             ],
             "description": "Open-source web server with automatic HTTPS written in Go",
             "image": "caddy:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/caddy.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/caddy/live/logo.png",
             "maintainer": "https://github.com/caddyserver/caddy-docker",
             "platform": "linux",
             "ports": [
@@ -126,7 +126,7 @@
                 }
             ],
             "image": "joomla:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/joomla.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/joomla/live/logo-1720462215828.png",
             "maintainer": "https://github.com/joomla-docker/docker-joomla",
             "platform": "linux",
             "ports": [
@@ -156,7 +156,7 @@
                 }
             ],
             "image": "scality/s3server",
-            "logo": "https://www.scality.com/wp-content/uploads/2022/04/scality-logo-horizontal.svg",
+            "logo": "https://www.gravatar.com/avatar/ece068ca0fdd42cf27d00309fe36382d",
             "maintainer": "https://cloud.docker.com/u/zenko/repository/docker/zenko/cloudserver",
             "platform": "linux",
             "ports": [
@@ -190,7 +190,7 @@
                 }
             ],
             "image": "mysql/mysql-server:5.7",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/mysql.png",
+            "logo": "https://www.gravatar.com/avatar/fe97afdad1c00cf7a8ffcb97b95b8d59",
             "maintainer": "https://github.com/docker-library/mysql",
             "platform": "linux",
             "ports": [
@@ -210,7 +210,7 @@
             ],
             "description": "Open-source HTTP server",
             "image": "httpd:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/lighttpd.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/httpd/live/logo-1720462209978.png",
             "maintainer": "https://github.com/docker-library/httpd",
             "platform": "linux",
             "ports": [
@@ -232,7 +232,7 @@
             "description": "Debian-based Linux operating system",
             "image": "ubuntu:latest",
             "interactive": true,
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/ubuntu.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/ubuntu/live/logo-1720462303144.png",
             "maintainer": "https://launchpad.net/cloud-images",
             "note": "Docker Friends Ubuntu Template",
             "platform": "linux",
@@ -245,7 +245,7 @@
             ],
             "description": "Highly reliable enterprise messaging system",
             "image": "rabbitmq:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/rabbitmq.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/rabbitmq/live/logo-1720462261491.png",
             "maintainer": "https://github.com/docker-library/rabbitmq",
             "platform": "linux",
             "ports": [
@@ -266,7 +266,7 @@
             ],
             "description": "Docker image registry",
             "image": "registry:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/docker.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/registry/live/logo-1720462264832.png",
             "maintainer": "https://github.com/distribution/distribution-library-image",
             "note": "Docker Friends Ubuntu Template",
             "platform": "linux",
@@ -297,7 +297,7 @@
                 }
             ],
             "image": "postgres:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/postgres.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/postgres/live/logo-1720462257907.png",
             "maintainer": "https://github.com/docker-library/postgres",
             "platform": "linux",
             "ports": [
@@ -337,7 +337,7 @@
             ],
             "description": "nginx web server",
             "image": "nginx:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/nginx.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/nginx/live/logo-1720462242584.png",
             "maintainer": "https://github.com/nginxinc/docker-nginx",
             "platform": "linux",
             "ports": [
@@ -367,7 +367,7 @@
                 }
             ],
             "image": "mariadb:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/mariadb.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/mariadb/live/logo-1720462226239.png",
             "maintainer": "https://github.com/MariaDB/mariadb-docker",
             "platform": "linux",
             "ports": [
@@ -387,7 +387,7 @@
             ],
             "description": "Open-source in-memory data structure store",
             "image": "redis:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/redis.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/redis/live/logo-1720462263103.png",
             "maintainer": "https://redis.io/",
             "platform": "linux",
             "ports": [
@@ -407,7 +407,7 @@
             ],
             "description": "Open-source enterprise search platform",
             "image": "solr:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/07a06d893e901fda965ba10f39d7aa7a3a18ea0d/svg/apache-solr.svg",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/solr/live/logo-1727432042104.png",
             "maintainer": "https://github.com/apache/solr",
             "platform": "linux",
             "ports": [
@@ -427,7 +427,7 @@
             ],
             "description": "Free and open-source blogging platform",
             "image": "ghost:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/ghost.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/ghost/live/logo-1722384580757.png",
             "maintainer": "https://github.com/docker-library/ghost",
             "note": "Access the blog management interface under <code>/ghost/</code>.",
             "platform": "linux",
@@ -450,7 +450,7 @@
             "description": "JavaScript-based platform for server-side and networking applications",
             "image": "node:latest",
             "interactive": true,
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/nodejs.png",
+            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/node/live/logo-1720462243432.png",
             "maintainer": "https://github.com/nodejs/docker-node",
             "platform": "linux",
             "title": "NodeJS",
@@ -498,7 +498,7 @@
             ],
             "description": "Open-source end-to-end software development platform",
             "image": "gitlab/gitlab-ce:latest",
-            "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/gitlab.png",
+            "logo": "https://www.gravatar.com/avatar/6edd0acaf80f784fab3dd2c31d604e74",
             "maintainer": "https://gitlab.com/gitlab-org/omnibus-gitlab/tree/master/docker",
             "note": "Default username is <b>root</b>. Check the <a href=\"https://docs.gitlab.com/ee/install/docker.html\" target=\"_blank\">GitLab documentation</a> to get started.",
             "platform": "linux",

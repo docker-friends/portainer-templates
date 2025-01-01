@@ -6,7 +6,7 @@
     "Database"
   ],
   "platform": "linux",
-  "logo": "https://cratedb.com/hubfs/CrateDB-logo-blue-white.svg",
+  "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/crate/live/logo-1720462176413.png",
   "image": "crate:latest",
   "ports": [
     "4200/tcp",

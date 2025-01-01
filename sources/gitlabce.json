@@ -8,7 +8,7 @@
     "Projectmanagement"
   ],
   "platform": "linux",
-  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/gitlab.png",
+  "logo": "https://www.gravatar.com/avatar/6edd0acaf80f784fab3dd2c31d604e74",
   "image": "gitlab/gitlab-ce:latest",
   "ports": [
     "80/tcp",

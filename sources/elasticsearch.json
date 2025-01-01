@@ -6,7 +6,7 @@
     "Database"
   ],
   "platform": "linux",
-  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/elasticsearch.png",
+  "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/elasticsearch/live/logo-1720462186184.png",
   "image": "docker.elastic.co/elasticsearch/elasticsearch-wolfi:8.17.0",
   "ports": [
     "9200/tcp",

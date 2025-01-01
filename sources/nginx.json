@@ -6,7 +6,7 @@
     "Webserver"
   ],
   "platform": "linux",
-  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/nginx.png",
+  "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/nginx/live/logo-1720462242584.png",
   "image": "nginx:latest",
   "ports": [
     "80/tcp",

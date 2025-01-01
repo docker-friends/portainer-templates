@@ -6,7 +6,7 @@
     "Messaging"
   ],
   "platform": "linux",
-  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/rabbitmq.png",
+  "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/rabbitmq/live/logo-1720462261491.png",
   "image": "rabbitmq:latest",
   "ports": [
     "5671/tcp",

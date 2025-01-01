@@ -6,7 +6,7 @@
         "development"
     ],
     "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/nodejs.png",
+    "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/node/live/logo-1720462243432.png",
     "image": "node:latest",
     "interactive": true,
     "command": "/bin/bash",
