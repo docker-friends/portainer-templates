@@ -25,17 +25,15 @@ This repository is community-maintained, meaning anyone can contribute by adding
 
 ### Using the Templates
 
-1. Clone or download this repository:
+1. In Portainer, navigate to **Settings > App Templates**.
 
-    `git clone https://github.com/docker-friends/portainer-templates.git`
+![portainer settings](https://raw.githubusercontent.com/docker-friends/portainer-templates/refs/heads/main/img/portainer-templates-settings.png)
 
-2. In Portainer, navigate to **Settings > App Templates**.
-
-3. Add the URL of the `templates.json` file from this repository:
+2. Add the URL of the `templates.json` file from this repository:
 
 	`https://raw.githubusercontent.com/docker-friends/portainer-templates/refs/heads/main/app-templates.json`
 
-4. Save the settings and explore the templates under App Templates in Portainer.
+3. Save the settings and explore the templates under App Templates in Portainer.
 
 ### Contributing
 
