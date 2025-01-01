@@ -1,0 +1,40 @@
+{
+  "category": [
+    "Management"
+  ],
+  "description": "Smokeping keeps track of your network latency.",
+  "env": [
+    {
+      "label": "PUID",
+      "name": "PUID",
+      "set": "1000"
+    },
+    {
+      "label": "PGID",
+      "name": "PGID",
+      "set": "1000"
+    },
+    {
+      "label": "TZ",
+      "name": "TZ",
+      "set": "Etc/UTC"
+    }
+  ],
+  "image": "linuxserver/smokeping:latest",
+  "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png",
+  "platform": "linux",
+  "ports": [
+    "80/tcp"
+  ],
+  "title": "smokeping",
+  "type": 1,
+  "volumes": [
+    {
+      "container": "/config"
+    },
+    {
+      "container": "/data"
+    }
+  ],
+  "maintainer": "https://github.com/linuxserver/docker-smokeping"
+}

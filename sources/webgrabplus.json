@@ -1,0 +1,37 @@
+{
+  "category": [
+    "Downloaders"
+  ],
+  "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber.",
+  "env": [
+    {
+      "label": "PUID",
+      "name": "PUID",
+      "set": "1000"
+    },
+    {
+      "label": "PGID",
+      "name": "PGID",
+      "set": "1000"
+    },
+    {
+      "label": "TZ",
+      "name": "TZ",
+      "set": "America/Chicago"
+    }
+  ],
+  "image": "linuxserver/webgrabplus:latest",
+  "logo": "https://artifacthub.io/image/46744e14-6231-4667-b7de-57fd39d3364e",
+  "platform": "linux",
+  "title": "webgrabplus",
+  "type": 1,
+  "volumes": [
+    {
+      "container": "/config"
+    },
+    {
+      "container": "/data"
+    }
+  ],
+  "maintainer": "https://github.com/linuxserver/docker-webgrabplus"
+}

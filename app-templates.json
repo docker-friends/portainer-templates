@@ -227,6 +227,43 @@
             ]
         },
         {
+            "category": [
+                "Downloaders"
+            ],
+            "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber.",
+            "env": [
+                {
+                    "label": "PUID",
+                    "name": "PUID",
+                    "set": "1000"
+                },
+                {
+                    "label": "PGID",
+                    "name": "PGID",
+                    "set": "1000"
+                },
+                {
+                    "label": "TZ",
+                    "name": "TZ",
+                    "set": "America/Chicago"
+                }
+            ],
+            "image": "linuxserver/webgrabplus:latest",
+            "logo": "https://artifacthub.io/image/46744e14-6231-4667-b7de-57fd39d3364e",
+            "maintainer": "https://github.com/linuxserver/docker-webgrabplus",
+            "platform": "linux",
+            "title": "webgrabplus",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/config"
+                },
+                {
+                    "container": "/data"
+                }
+            ]
+        },
+        {
             "categories": [
                 "Edge"
             ],
@@ -285,6 +322,46 @@
                     "container": "/data/db"
                 }
             ]
+        },
+        {
+            "category": [
+                "DNS",
+                "Tools"
+            ],
+            "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence. First, go to duckdns site, register your subdomain and retrieve your token. Then run the docker create command above with your subdomain(s) and token. It will update your IP with the DuckDNS service every 5 minutes.",
+            "env": [
+                {
+                    "label": "SUBDOMAINS",
+                    "name": "SUBDOMAINS",
+                    "set": ""
+                },
+                {
+                    "label": "TOKEN",
+                    "name": "TOKEN",
+                    "set": ""
+                },
+                {
+                    "label": "PUID",
+                    "name": "PUID",
+                    "set": "1000"
+                },
+                {
+                    "label": "PGID",
+                    "name": "PGID",
+                    "set": "1000"
+                },
+                {
+                    "label": "TZ",
+                    "name": "TZ",
+                    "set": "Etc/UTC"
+                }
+            ],
+            "image": "linuxserver/duckdns:latest",
+            "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/duckdns.png",
+            "maintainer": "https://github.com/linuxserver/docker-duckdns",
+            "platform": "linux",
+            "title": "duckdns",
+            "type": 1
         },
         {
             "categories": [
@@ -575,6 +652,46 @@
             "platform": "linux",
             "title": "Ubuntu",
             "type": 1
+        },
+        {
+            "category": [
+                "Management"
+            ],
+            "description": "Smokeping keeps track of your network latency.",
+            "env": [
+                {
+                    "label": "PUID",
+                    "name": "PUID",
+                    "set": "1000"
+                },
+                {
+                    "label": "PGID",
+                    "name": "PGID",
+                    "set": "1000"
+                },
+                {
+                    "label": "TZ",
+                    "name": "TZ",
+                    "set": "Etc/UTC"
+                }
+            ],
+            "image": "linuxserver/smokeping:latest",
+            "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/smokeping-logo.png",
+            "maintainer": "https://github.com/linuxserver/docker-smokeping",
+            "platform": "linux",
+            "ports": [
+                "80/tcp"
+            ],
+            "title": "smokeping",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/config"
+                },
+                {
+                    "container": "/data"
+                }
+            ]
         },
         {
             "categories": [
