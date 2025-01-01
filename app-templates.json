@@ -1394,7 +1394,7 @@
                     "set": "Etc/UTC"
                 }
             ],
-            "image": "linuxserver/booksonic-air:latest",
+            "image": "linuxserver/booksonic-air:2201.1.0",
             "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/booksonic-air.png",
             "maintainer": "https://github.com/linuxserver/docker-booksonic-air",
             "name": "booksonic-air",
