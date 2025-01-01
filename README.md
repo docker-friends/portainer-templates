@@ -50,9 +50,10 @@ We welcome contributions! Here's how you can help:
 4. Commit your changes and push to your branch:
 
 	`git commit -m "Add new template for [application]"`
+
 	`git push origin my-new-template`
 
-5. Submit a pull request for review.
+6. Submit a pull request for review.
 
 Please ensure your template follows the [Portainer Template Format](https://docs.portainer.io/advanced/app-templates/format).
 
