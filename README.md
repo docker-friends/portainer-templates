@@ -1,5 +1,5 @@
 
-# Portainer Community Templates
+# Portainer Templates
 
 Welcome to the community-driven **Portainer Templates** repository! 🚢
 
