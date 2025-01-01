@@ -11,6 +11,8 @@ Portainer is a lightweight management UI that allows you to easily manage your D
 
 This repository is community-maintained, meaning anyone can contribute by adding, updating, or improving templates. Together, we can build a robust library of useful templates for the entire Portainer community!
 
+**NOTE**: Each and ever App in this template is tested and **FULLY WORKING** with the `latest` tag for the images.
+
 ## 🛠 Features
 
 - **Community-Powered**: Contributions from Docker enthusiasts around the globe.
