@@ -33,7 +33,7 @@ This repository is community-maintained, meaning anyone can contribute by adding
 
 	`https://raw.githubusercontent.com/docker-friends/portainer-templates/refs/heads/main/app-templates.json`
 
-3. Save the settings and explore the templates under App Templates in Portainer.
+3. Save the settings and explore the templates under `Templates > Application` section in Portainer.
 
 ### Contributing
 
