@@ -16,5 +16,6 @@
       "container": "/data"
     }
   ],
+  "name": "caddy",
   "maintainer": "https://github.com/caddyserver/caddy-docker"
 }

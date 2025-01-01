@@ -14,6 +14,7 @@
       "label": "Datadog API key"
     }
   ],
+  "name": "datadog",
   "volumes": [
     {
       "container": "/var/run/docker.sock",

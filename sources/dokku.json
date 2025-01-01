@@ -13,6 +13,7 @@
     "80/tcp",
     "443/tcp"
   ],
+  "name": "dokku",
   "volumes": [
     {
       "container": "/mnt/dokku",

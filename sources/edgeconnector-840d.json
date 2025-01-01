@@ -13,5 +13,6 @@
     "8099/tcp",
     "4897/tcp"
   ],
+  "name": "edgeconnector-840d",
   "maintainer": "https://github.com/SoftingIndustrial/datafeed-edge-connector/"
 }

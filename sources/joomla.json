@@ -19,6 +19,7 @@
       "label": "Database password"
     }
   ],
+  "name": "joomla",
   "ports": [
     "80/tcp"
   ],

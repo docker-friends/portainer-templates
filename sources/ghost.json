@@ -12,6 +12,7 @@
   "ports": [
     "2368/tcp"
   ],
+  "name": "ghost",
   "volumes": [
     {
       "container": "/var/lib/ghost/content"

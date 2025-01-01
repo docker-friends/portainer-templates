@@ -16,5 +16,6 @@
       "container": "/usr/local/apache2/htdocs/"
     }
   ],
+  "name": "httpd",
   "maintainer": "https://github.com/docker-library/httpd"
 }

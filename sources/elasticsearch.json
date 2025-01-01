@@ -12,6 +12,7 @@
     "9200/tcp",
     "9300/tcp"
   ],
+  "name": "elasticsearch",
   "volumes": [
     {
       "container": "/usr/share/elasticsearch/data"

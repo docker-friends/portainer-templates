@@ -5,6 +5,7 @@
   "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/registry/live/logo-1720462264832.png",
   "platform": "linux",
   "type": 1,
+  "name": "docker-image-registry",
   "categories": [
     "docker"
   ],

@@ -30,6 +30,7 @@
       "container": "/root/.minio"
     }
   ],
+  "name": "minio",
   "command": "server /data --console-address ':9001'",
   "maintainer": "https://quay.io/repository/minio/minio"
 }

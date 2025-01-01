@@ -16,5 +16,6 @@
       "container": "/data/db"
     }
   ],
+  "name": "mongodb",
   "maintainer": "https://github.com/docker-library/mongo"
 }

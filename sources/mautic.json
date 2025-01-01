@@ -27,5 +27,6 @@
       "container": "/var/www/html"
     }
   ],
+  "name": "mautic",
   "maintainer": "https://github.com/mautic/docker-mautic"
 }

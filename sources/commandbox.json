@@ -19,5 +19,6 @@
     "8080/tcp",
     "8443/tcp"
   ],
+  "name": "commandbox",
   "maintainer": "https://github.com/Ortus-Solutions/docker-commandbox"
 }

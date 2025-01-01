@@ -17,5 +17,6 @@
       "container": "/var/jenkins_home"
     }
   ],
+  "name": "jenkins",
   "maintainer": "https://github.com/jenkinsci/docker"
 }

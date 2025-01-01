@@ -23,5 +23,6 @@
       "label": "SA password"
     }
   ],
+  "name": "mssql",
   "maintainer": "https://mcr.microsoft.com/en-us/artifact/mar/mssql/server/about"
 }

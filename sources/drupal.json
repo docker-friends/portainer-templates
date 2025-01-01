@@ -11,6 +11,7 @@
   "ports": [
     "80/tcp"
   ],
+  "name": "drupal",
   "volumes": [
     {
       "container": "/var/www/html"

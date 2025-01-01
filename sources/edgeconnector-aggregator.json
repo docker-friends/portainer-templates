@@ -13,6 +13,7 @@
     "8099/tcp",
     "4897/tcp"
   ],
+  "name": "edgeconnector-aggregator",
   "env": [
     {
       "name": "TZ",

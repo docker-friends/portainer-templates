@@ -11,6 +11,7 @@
   "ports": [
     "6200/tcp"
   ],
+  "name": "floating-license-server",
   "interactive": true,
   "volumes": [
     {

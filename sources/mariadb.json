@@ -22,5 +22,6 @@
       "container": "/var/lib/mysql"
     }
   ],
+  "name": "mariadb",
   "maintainer": "https://github.com/MariaDB/mariadb-docker"
 }

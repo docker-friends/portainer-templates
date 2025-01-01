@@ -12,6 +12,7 @@
     "4200/tcp",
     "4300/tcp"
   ],
+  "name": "cratedb",
   "volumes": [
     {
       "container": "/data"
