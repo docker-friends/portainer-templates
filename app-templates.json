@@ -265,24 +265,6 @@
         },
         {
             "categories": [
-                "Edge"
-            ],
-            "description": "Connect Siemens SIMATIC S7-300/400/1200/1500 PLCs and provide the data via OPC UA and MQTT",
-            "image": "softingindustrial/edgeconnector-siemens",
-            "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0",
-            "maintainer": "https://github.com/SoftingIndustrial/datafeed-edge-connector/",
-            "name": "edgeconnector-siemens",
-            "platform": "linux",
-            "ports": [
-                "443/tcp",
-                "8099/tcp",
-                "4897/tcp"
-            ],
-            "title": "EdgeConnector Siemens",
-            "type": 1
-        },
-        {
-            "categories": [
                 "Cms"
             ],
             "description": "A free and open-source CMS built on top of Zope",
@@ -696,24 +678,6 @@
         },
         {
             "categories": [
-                "Edge"
-            ],
-            "description": "Access Siemens SINUMERIK 840D sl/pl controllers and provide data via OPC UA and MQTT",
-            "image": "softingindustrial/edgeconnector-840d",
-            "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0",
-            "maintainer": "https://github.com/SoftingIndustrial/datafeed-edge-connector/",
-            "name": "edgeconnector-840d",
-            "platform": "linux",
-            "ports": [
-                "443/tcp",
-                "8099/tcp",
-                "4897/tcp"
-            ],
-            "title": "EdgeConnector 840D",
-            "type": 1
-        },
-        {
-            "categories": [
                 "Messaging"
             ],
             "description": "Highly reliable enterprise messaging system",
@@ -909,56 +873,6 @@
         },
         {
             "categories": [
-                "Edge"
-            ],
-            "description": "Connect Modbus TCP Sensors/PLCs and provide the data via OPC UA and MQTT",
-            "image": "softingindustrial/edgeconnector-modbus:latest",
-            "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0",
-            "maintainer": "https://github.com/SoftingIndustrial/datafeed-edge-connector/",
-            "name": "edgeconnector-modbus",
-            "platform": "linux",
-            "ports": [
-                "443/tcp",
-                "8099/tcp",
-                "4897/tcp"
-            ],
-            "title": "EdgeConnector Modbus",
-            "type": 1
-        },
-        {
-            "categories": [
-                "Edge"
-            ],
-            "description": "Offers a powerful OPC UA aggregation service which provides data via OPC UA, as well as MQTT",
-            "env": [
-                {
-                    "label": "TZ",
-                    "name": "TZ"
-                }
-            ],
-            "image": "softingindustrial/edgeaggregator",
-            "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0",
-            "maintainer": "https://github.com/SoftingIndustrial/edgeConfiguratorAPI-Aggregator",
-            "name": "edgeconnector-aggregator",
-            "platform": "linux",
-            "ports": [
-                "443/tcp",
-                "8099/tcp",
-                "4897/tcp"
-            ],
-            "title": "EdgeConnector Aggregator",
-            "type": 1,
-            "volumes": [
-                {
-                    "container": "/config"
-                },
-                {
-                    "container": "/mqtt"
-                }
-            ]
-        },
-        {
-            "categories": [
                 "Database"
             ],
             "description": "The most advanced open-source database",
@@ -1034,28 +948,6 @@
         },
         {
             "categories": [
-                "Edge"
-            ],
-            "description": "License Server for Softing edgeConnector products",
-            "image": "softingindustrial/floating-license-server:latest",
-            "interactive": true,
-            "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0",
-            "maintainer": "https://github.com/SoftingIndustrial/datafeed-edge-connector",
-            "name": "floating-license-server",
-            "platform": "linux",
-            "ports": [
-                "6200/tcp"
-            ],
-            "title": "Floating License Server",
-            "type": 1,
-            "volumes": [
-                {
-                    "container": "/licsrv/licenses"
-                }
-            ]
-        },
-        {
-            "categories": [
                 "Database"
             ],
             "description": "Performance beyond MySQL",
@@ -1103,38 +995,6 @@
         },
         {
             "categories": [
-                "Edge"
-            ],
-            "description": "Connect FANUC CNCs and provide the data via OPC UA and MQTT",
-            "env": [
-                {
-                    "label": "TZ",
-                    "name": "TZ"
-                }
-            ],
-            "image": "softingindustrial/edgeconnector-fanuc-cnc",
-            "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0",
-            "maintainer": "https://github.com/SoftingIndustrial/datafeed-edge-connector/",
-            "name": "edgeconnector-fanuc-cnc",
-            "platform": "linux",
-            "ports": [
-                "443/tcp",
-                "8099/tcp",
-                "4897/tcp"
-            ],
-            "title": "EdgeConnector FANUC CNC",
-            "type": 1,
-            "volumes": [
-                {
-                    "container": "/config"
-                },
-                {
-                    "container": "/mqtt"
-                }
-            ]
-        },
-        {
-            "categories": [
                 "Searchengine"
             ],
             "description": "Open-source enterprise search platform",
@@ -1150,28 +1010,6 @@
             "volumes": [
                 {
                     "container": "/opt/solr/mydata"
-                }
-            ]
-        },
-        {
-            "categories": [
-                "Blog"
-            ],
-            "description": "Free and open-source blogging platform",
-            "image": "ghost:latest",
-            "logo": "https://djeqr6to3dedg.cloudfront.net/repo-logos/library/ghost/live/logo-1722384580757.png",
-            "maintainer": "https://github.com/docker-library/ghost",
-            "name": "ghost",
-            "note": "Access the blog management interface under <code>/ghost/</code>.",
-            "platform": "linux",
-            "ports": [
-                "2368/tcp"
-            ],
-            "title": "Ghost",
-            "type": 1,
-            "volumes": [
-                {
-                    "container": "/var/lib/ghost/content"
                 }
             ]
         },
@@ -1352,7 +1190,7 @@
             "logo": "https://www.gravatar.com/avatar/6edd0acaf80f784fab3dd2c31d604e74",
             "maintainer": "https://gitlab.com/gitlab-org/omnibus-gitlab/tree/master/docker",
             "name": "gitlab-ce",
-            "note": "Default username is <b>root</b>. Check the <a href=\"https://docs.gitlab.com/ee/install/docker.html\" target=\"_blank\">GitLab documentation</a> to get started.",
+            "note": "Default username is <b>root</b>. To get initial password, run \"cat /etc/gitlab/initial_root_password\" inside the container terminal and copy the password from there.",
             "platform": "linux",
             "ports": [
                 "80/tcp",

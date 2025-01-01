@@ -2,7 +2,7 @@
   "type": 1,
   "title": "GitLab CE",
   "description": "Open-source end-to-end software development platform",
-  "note": "Default username is <b>root</b>. Check the <a href=\"https://docs.gitlab.com/ee/install/docker.html\" target=\"_blank\">GitLab documentation</a> to get started.",
+  "note": "Default username is <b>root</b>. To get initial password, run \"cat /etc/gitlab/initial_root_password\" inside the container terminal and copy the password from there.",
   "categories": [
     "Development",
     "Projectmanagement"
