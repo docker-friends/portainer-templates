@@ -1,0 +1,50 @@
+{
+  "type": 1,
+  "title": "OPC Router",
+  "description": "No-code middleware for industrial applications. The OPC Router connects PLCs, PCS, SCADA, MES, SQL databases and servers, label printers, e-mail servers and erp-systems via OPC UA, MQTT, REST, CSV and many others without any programming effort",
+  "note": "More information about the <a href=\"https://www.opc-router.com/terms-of-use-and-eula/?utm_source=DockerHub_runtime&utm_medium=click&utm_campaign=TermsOfUseAndEula\" target=\"_blank\">EULA</a>.",
+  "categories": [
+    "Edge"
+  ],
+  "platform": "linux",
+  "logo": "https://www.gravatar.com/avatar/93e4c2e16759d19d698849be1159d6d7",
+  "image": "opcrouter/runtime:latest",
+  "ports": [
+    "49429/tcp",
+    "8080/tcp",
+    "8081/tcp"
+  ],
+  "env": [
+    {
+      "name": "INITIAL_USERNAME",
+      "label": "Initial Admin User user"
+    },
+    {
+      "name": "INITIAL_PASSWORD",
+      "label": "Inital Admin User Password"
+    },
+    {
+      "name": "OR_I_ACCEPT_EULA",
+      "label": "Accept EULA",
+      "select": [
+        {
+          "text": "Yes, I accept",
+          "value": "true",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "volumes": [
+    {
+      "container": "/data/database"
+    },
+    {
+      "container": "/inray"
+    },
+    {
+      "container": "/var/log/opcrouter"
+    }
+  ],
+  "maintainer": "https://github.com/OPC-Router"
+}

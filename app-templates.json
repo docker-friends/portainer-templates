@@ -2,6 +2,56 @@
     "templates": [
         {
             "categories": [
+                "Edge"
+            ],
+            "description": "No-code middleware for industrial applications. The OPC Router connects PLCs, PCS, SCADA, MES, SQL databases and servers, label printers, e-mail servers and erp-systems via OPC UA, MQTT, REST, CSV and many others without any programming effort",
+            "env": [
+                {
+                    "label": "Initial Admin User user",
+                    "name": "INITIAL_USERNAME"
+                },
+                {
+                    "label": "Inital Admin User Password",
+                    "name": "INITIAL_PASSWORD"
+                },
+                {
+                    "label": "Accept EULA",
+                    "name": "OR_I_ACCEPT_EULA",
+                    "select": [
+                        {
+                            "default": true,
+                            "text": "Yes, I accept",
+                            "value": "true"
+                        }
+                    ]
+                }
+            ],
+            "image": "opcrouter/runtime:latest",
+            "logo": "https://www.gravatar.com/avatar/93e4c2e16759d19d698849be1159d6d7",
+            "maintainer": "https://github.com/OPC-Router",
+            "note": "More information about the <a href=\"https://www.opc-router.com/terms-of-use-and-eula/?utm_source=DockerHub_runtime&utm_medium=click&utm_campaign=TermsOfUseAndEula\" target=\"_blank\">EULA</a>.",
+            "platform": "linux",
+            "ports": [
+                "49429/tcp",
+                "8080/tcp",
+                "8081/tcp"
+            ],
+            "title": "OPC Router",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/data/database"
+                },
+                {
+                    "container": "/inray"
+                },
+                {
+                    "container": "/var/log/opcrouter"
+                }
+            ]
+        },
+        {
+            "categories": [
                 "Database"
             ],
             "description": "Microsoft SQL Server on Linux",
@@ -413,6 +463,23 @@
         },
         {
             "categories": [
+                "Edge"
+            ],
+            "description": "Connect Modbus TCP Sensors/PLCs and provide the data via OPC UA and MQTT",
+            "image": "softingindustrial/edgeconnector-modbus:latest",
+            "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0",
+            "maintainer": "https://github.com/SoftingIndustrial/datafeed-edge-connector/",
+            "platform": "linux",
+            "ports": [
+                "443/tcp",
+                "8099/tcp",
+                "4897/tcp"
+            ],
+            "title": "EdgeConnector Modbus",
+            "type": 1
+        },
+        {
+            "categories": [
                 "Cms"
             ],
             "description": "Open-source modular CMS",
@@ -523,6 +590,27 @@
                 },
                 {
                     "container": "/usr/share/nginx/html"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Edge"
+            ],
+            "description": "License Server for Softing edgeConnector products",
+            "image": "softingindustrial/floating-license-server:latest",
+            "interactive": true,
+            "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0",
+            "maintainer": "https://github.com/SoftingIndustrial/datafeed-edge-connector",
+            "platform": "linux",
+            "ports": [
+                "6200/tcp"
+            ],
+            "title": "Floating License Server",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/licsrv/licenses"
                 }
             ]
         },
@@ -738,6 +826,46 @@
                 },
                 {
                     "container": "/root/.minio"
+                }
+            ]
+        },
+        {
+            "categories": [
+                "Paas"
+            ],
+            "description": "The smallest PaaS implementation as a container",
+            "env": [
+                {
+                    "description": "Global hostname to be registered by Dokku",
+                    "label": "Dokku hostname",
+                    "name": "DOKKU_HOSTNAME"
+                },
+                {
+                    "default": "/var/lib/dokku/home/dokku",
+                    "description": "Image build cache path. Generally set to <data dir> + '/home/dokku'",
+                    "label": "Dokku host root",
+                    "name": "DOKKU_HOST_ROOT"
+                }
+            ],
+            "image": "dokku/dokku",
+            "logo": "https://www.gravatar.com/avatar/0a78746a91cfd3779ed04cb68ae34f39",
+            "maintainer": "https://github.com/dokku/dokku",
+            "platform": "linux",
+            "ports": [
+                "22/tcp",
+                "80/tcp",
+                "443/tcp"
+            ],
+            "title": "Dokku",
+            "type": 1,
+            "volumes": [
+                {
+                    "bind": "/var/lib/dokku",
+                    "container": "/mnt/dokku"
+                },
+                {
+                    "bind": "/var/run/docker.sock",
+                    "container": "/var/run/docker.sock"
                 }
             ]
         },
