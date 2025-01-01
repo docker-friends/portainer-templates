@@ -1,0 +1,18 @@
+{
+  "type": 1,
+  "title": "Cockpit",
+  "name": "cockpit-cms",
+  "categories": [
+    "Cms"
+  ],
+  "description": "Cockpit is a headless CMS with an API-first approach that puts content first.",
+  "note": "",
+  "logo": "https://raw.githubusercontent.com/walkxcode/dashboard-icons/refs/heads/main/png/cockpit-cms.png",
+  "platform": "linux",
+  "image": "cockpithq/cockpit:core-latest",
+  "ports": [
+    "8088:80/tcp"
+  ],
+  "restart_policy": "unless-stopped",
+  "maintainer": "https://github.com/Cockpit-HQ/Cockpit"
+}

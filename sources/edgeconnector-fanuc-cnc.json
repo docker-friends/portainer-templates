@@ -1,0 +1,31 @@
+{
+  "type": 1,
+  "title": "EdgeConnector FANUC CNC",
+  "description": "Connect FANUC CNCs and provide the data via OPC UA and MQTT",
+  "categories": [
+    "Edge"
+  ],
+  "platform": "linux",
+  "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0",
+  "image": "softingindustrial/edgeconnector-fanuc-cnc",
+  "ports": [
+    "443/tcp",
+    "8099/tcp",
+    "4897/tcp"
+  ],
+  "env": [
+    {
+      "name": "TZ",
+      "label": "TZ"
+    }
+  ],
+  "volumes": [
+    {
+      "container": "/config"
+    },
+    {
+      "container": "/mqtt"
+    }
+  ],
+  "maintainer": "https://github.com/SoftingIndustrial/datafeed-edge-connector/"
+}
