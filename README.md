@@ -1,23 +1,34 @@
 
+
 # Portainer Templates
 
 Welcome to the community-driven **Portainer Templates** repository! 🚢
 
-This project provides a huge collection of community-maintained templates designed to streamline and enhance your experience with [Portainer](https://www.portainer.io/), making it easier than ever to deploy and manage containerized applications.
+This project provides a community-maintained Portainer Template with a huge collection of Docker apps. This is designed to streamline and enhance your experience with [Portainer](https://www.portainer.io/), making it easier than ever to deploy and manage containerized applications.
 
 ## 📖 About
 
-Portainer is a lightweight management UI that allows you to easily manage your Docker environments. These templates provide pre-configured, ready-to-use setups for popular containerized applications, helping you quickly deploy services without the need to manually write complex configurations.
+These templates provide pre-configured, ready-to-use setups for popular containerized applications, helping you quickly deploy services without the need to manually write complex configurations.
 
 This repository is community-maintained, meaning anyone can contribute by adding, updating, or improving templates. Together, we can build a robust library of useful templates for the entire Portainer community!
 
-**NOTE**: Each and ever App in this template is tested and **FULLY WORKING** with the `latest` tag for the images.
+**NOTE**: Each and every App in this template is tested and **FULLY WORKING** with the `latest` tag for the images.
+
+## 👆 1-Click Deployment of Docker Apps
+
+In the Portainer Dashboard, go to `Templates > Application`, select the desired Docker app from the list and click the `Deploy the container` button. 
+
+That's it! Your Docker app will be ready to use after the processing is complete.
+
+![portainer template deployment demo](https://raw.githubusercontent.com/docker-friends/portainer-templates/refs/heads/main/img/portainer-templates-deployment.gif)
 
 ## 🛠 Features
 
+- **1-Click Deployment**: Deploy Docker containers with just 1 click.
+
 - **Community-Powered**: Contributions from Docker enthusiasts around the globe.
 
-- **Diverse Templates**: A wide range of application templates, from databases to web servers and more.
+- **Diverse Templates**: A wide range of applications in the templates, from databases to web servers and more.
 
 - **Easy Integration**: Use directly with Portainer's App Templates feature.
 
